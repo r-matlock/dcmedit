@@ -1,6 +1,9 @@
 build
 .cache/*
 .clangd/*
+.git
+.github
+.gitignore
 compile_commands.json
-src/common/App_info.cpp
 scripts/__pycache__
+Releases/*
