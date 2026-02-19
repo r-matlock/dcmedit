@@ -1,0 +1,55 @@
+Detecting compiler hash for triplet x64-windows...
+Compiler found: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe
+The following packages are already installed:
+  * brotli:x64-windows@1.2.0
+  * bzip2[core,tool]:x64-windows@1.0.8#6
+    catch2:x64-windows@3.11.0
+    dcmtk:x64-windows@3.6.9#2
+  * double-conversion:x64-windows@3.3.1
+  * egl-registry:x64-windows@2024-01-25
+  * freetype[brotli,bzip2,core,png,zlib]:x64-windows@2.13.3
+  * harfbuzz[core,freetype]:x64-windows@12.2.0
+  * libjpeg-turbo:x64-windows@3.1.2
+  * libpng:x64-windows@1.6.50
+  * openssl:x64-windows@3.6.0#3
+  * pcre2[core,jit,platform-default-features]:x64-windows@10.47
+  * pkgconf:x64-windows@2.5.1#4
+    qt5-base[core,openssl]:x64-windows@5.15.18
+    trompeloeil:x64-windows@48
+  * vcpkg-cmake:x64-windows@2024-04-23
+  * vcpkg-cmake-config:x64-windows@2024-05-23
+  * vcpkg-cmake-get-vars:x64-windows@2025-05-29
+  * vcpkg-pkgconfig-get-modules:x64-windows@2024-04-03
+  * vcpkg-tool-meson:x64-windows@1.9.0#3
+  * zlib:x64-windows@1.3.1
+catch2 provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(Catch2 CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Catch2::Catch2 Catch2::Catch2WithMain)
+
+catch2 provides pkg-config modules:
+
+  # A modern, C++-native test framework for C++14 and above (links in default main)
+  catch2-with-main
+
+  # A modern, C++-native, test framework for C++14 and above
+  catch2
+
+dcmtk provides CMake targets:
+
+  find_package(DCMTK CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE DCMTK::DCMTK)
+  # You may also select specific modules using DCMTK::<module>.
+
+dcmtk provides pkg-config modules:
+
+  dcmtk
+
+trompeloeil provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(trompeloeil CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE trompeloeil::trompeloeil)
+
+All requested installations completed successfully in: 2.18 ms
