@@ -38,7 +38,7 @@ Dataset_view::Dataset_view()
     auto layout = new QVBoxLayout(this);
 
     auto header_layout = new QHBoxLayout();
-    auto add_button = new QPushButton(QIcon(":/add.svg"), "");
+    auto add_button = new QPushButton(QIcon(":/add.svg"), "Add element");
     add_button->setToolTip("Add element");
     connect(add_button, &QPushButton::clicked, [this] {add_element_clicked(QModelIndex());});
     header_layout->addWidget(add_button);

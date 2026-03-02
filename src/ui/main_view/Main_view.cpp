@@ -144,6 +144,7 @@ void Main_view::set_editor_menu_bar() {
 QToolBar* Main_view::create_editor_tool_bar() {
     auto tool_bar = new QToolBar("Tool bar", this);
 
+	tool_bar->setToolButtonStyle(Qt::ToolButtonTextOnly);
     tool_bar->addAction(QIcon(":/home.svg"), "Reset layout", [this] {reset_layout_clicked();});
     tool_bar->addSeparator();
 
